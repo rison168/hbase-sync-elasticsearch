@@ -67,7 +67,7 @@ public class ElasticSearchClient {
      *
      * @return
      */
-    private TransportClient initElasticsearch() {
+    public TransportClient initElasticsearch() {
         LOG.info("====================正在初始化：" + this.clusterName + "=========================");
         TransportClient client = null;
         Settings settings = Settings.builder()
